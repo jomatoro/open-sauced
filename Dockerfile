@@ -8,6 +8,7 @@ COPY .npmrc ./
 
 RUN npm install --global npm@latest
 RUN npm ci
+RUN nmp version
 
 COPY .*.js ./
 COPY *config.?js ./
